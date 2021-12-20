@@ -3,6 +3,8 @@
 
 
 body{
+   display: flex;
+   justify-content: center;
    font-size: 18px;
    background-color: grey;
 }
@@ -14,8 +16,8 @@ body{
 /*== HEADER STYLING ==*/
 #header{
    width: 100%;
-   max-width: 1440px;
-   height: 100vh;
+   /*max-width: 1440px;*/
+   height: calc(100vh - 100px);
    position: relative;
    background-color: #3dbeff;
    background-image: url("../images/desktop/image-header.jpg");
@@ -33,7 +35,7 @@ body{
    width: 50%;
 }
 .logo-container > img{
-   margin-left: 20px;
+   margin-left: 30px;
 }
 .menu-container{
    width: 50%;
@@ -41,11 +43,22 @@ body{
 .ul-menu{
    display: flex;
    justify-content: flex-end;
-   margin-right: 20px;
    font-family: 'Barlow', sans-serif;
 }
 .li-menu-item{
-   margin-left: 40px;
+   padding: 15px 30px;
+   border-radius: 20px;
+   width: max-content;
+   cursor: pointer;
+   transition: all 0.5s ease-in-out;
+}
+.li-menu-item:hover{
+   background-color: #6ecefe;
+   font-family: 'Fraunces', serif;
+}
+.li-menu-item:active{
+   background-color: white;
+   color: #333;
 }
 .menu-link{
    text-decoration: none;
@@ -57,13 +70,19 @@ body{
 .main-title-wrapper{
    display: flex;
    justify-content: center;
-   margin-top: calc(10%);
+   align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+   margin-top: calc(5%);
 }
 .main-title{
    font-family: 'Fraunces', serif;
    font-size: 40px;
    color: white;
    text-transform: uppercase;
+   text-align: center;
    word-spacing: 15px;
-   letter-spacing: 6px;;
+   letter-spacing: 6px;
+   width: 100%;
+   margin-bottom: 50px;
 }
