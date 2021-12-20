@@ -4,4 +4,66 @@
 
 body{
    font-size: 18px;
+   background-color: grey;
+}
+.wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/*== HEADER STYLING ==*/
+#header{
+   width: 100%;
+   max-width: 1440px;
+   height: 100vh;
+   position: relative;
+   background-color: #3dbeff;
+   background-image: url("../images/desktop/image-header.jpg");
+   background-size: cover;
+   background-position: bottom;
+   background-repeat: no-repeat;
+}
+.wrapper-header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 0;
+}
+.logo-container{
+   width: 50%;
+}
+.logo-container > img{
+   margin-left: 20px;
+}
+.menu-container{
+   width: 50%;
+}
+.ul-menu{
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 20px;
+   font-family: 'Barlow', sans-serif;
+}
+.li-menu-item{
+   margin-left: 40px;
+}
+.menu-link{
+   text-decoration: none;
+   color: white;
+}
+
+
+/* == HERO STYLING ==*/
+.main-title-wrapper{
+   display: flex;
+   justify-content: center;
+   margin-top: calc(10%);
+}
+.main-title{
+   font-family: 'Fraunces', serif;
+   font-size: 40px;
+   color: white;
+   text-transform: uppercase;
+   word-spacing: 15px;
+   letter-spacing: 6px;;
 }
