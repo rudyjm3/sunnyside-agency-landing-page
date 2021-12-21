@@ -3,10 +3,15 @@
 
 
 body{
-   display: flex;
-   justify-content: center;
    font-size: 18px;
    background-color: grey;
+   width: 100%;
+   /*max-width: 1440px;*/
+   min-height: 100vh;
+   /*display: flex;
+   justify-content: center;
+   flex-wrap: wrap;*/
+   /*margin: 0 auto;*/
 }
 .wrapper{
    display: flex;
@@ -16,8 +21,7 @@ body{
 /*== HEADER STYLING ==*/
 #header{
    width: 100%;
-   /*max-width: 1440px;*/
-   height: calc(100vh - 100px);
+   height: 100vh;
    position: relative;
    background-color: #3dbeff;
    background-image: url("../images/desktop/image-header.jpg");
@@ -85,4 +89,36 @@ body{
    letter-spacing: 6px;
    width: 100%;
    margin-bottom: 50px;
+}
+
+/* == BRAND GRID INFO STYLING == */
+#brand-info-section{
+   width: 100%;
+   position: relative;
+}
+.container-brand-info{ /* Grid Parent*/
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+}
+.brand-box{
+   background-color: white;
+   display: grid;
+   place-items: center;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.brand-box:nth-child(2){
+   background-image: url("../images/desktop/image-transform.jpg");
+}
+.brand-box:nth-child(3){
+   background-image: url("../images/desktop/image-stand-out.jpg");
+}
+.brand-box:nth-child(5){
+   background-image: url("../images/desktop/image-graphic-design.jpg");
+}
+.brand-box:nth-child(6){
+   background-image: url("../images/desktop/image-photography.jpg");
 }
