@@ -3,15 +3,16 @@
 
 
 body{
+   font-family: 'Open Sans', sans-serif;
    font-size: 18px;
    background-color: grey;
-   width: 100%;
-   /*max-width: 1440px;*/
    min-height: 100vh;
-   /*display: flex;
+   display: flex;
    justify-content: center;
-   flex-wrap: wrap;*/
-   /*margin: 0 auto;*/
+   flex-wrap: wrap;
+}
+section{
+   max-width: 1440px;
 }
 .wrapper{
    display: flex;
@@ -48,13 +49,14 @@ body{
    display: flex;
    justify-content: flex-end;
    font-family: 'Barlow', sans-serif;
+   margin-right: 20px;
 }
 .li-menu-item{
    padding: 15px 30px;
    border-radius: 20px;
    width: max-content;
    cursor: pointer;
-   transition: all 0.5s ease-in-out;
+   transition: all 0.3s ease-in-out;
 }
 .li-menu-item:hover{
    background-color: #6ecefe;
@@ -105,10 +107,44 @@ body{
 .brand-box{
    background-color: white;
    display: grid;
-   place-items: center;
+   padding: 20%;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   text-align: left;
+}
+.brand-info-title{
+   font-size: 35px;
+   font-weight: 900;
+   line-height: 1.2;
+   font-family: 'Fraunces', serif;
+   margin-bottom: 35px;
+}
+.brand-text-content{
+   color: #777777;
+   line-height: 1.8;
+   margin-bottom: 35px;
+   font-weight: 500;
+}
+.brand-box > a{
+   text-decoration: none;
+   font-family: 'Fraunces', serif;
+   font-size: 20px;
+   font-weight: 900;
+   color: #333;
+   text-transform: uppercase;
+}
+.brand-box:nth-child(1) > a:hover{
+   text-decoration-line: underline;
+   text-decoration-style: wavy;
+   text-decoration-color: #f6d308;
+   transition: text-decoration-style 0.4s ease-in;
+}
+.brand-box:nth-child(4) > a:hover{
+   text-decoration-line: underline;
+   text-decoration-style: wavy;
+   text-decoration-color: #ff7767;
+   transition: text-decoration-style 0.4s ease-in;
 }
 .brand-box:nth-child(2){
    background-image: url("../images/desktop/image-transform.jpg");
@@ -117,8 +153,26 @@ body{
    background-image: url("../images/desktop/image-stand-out.jpg");
 }
 .brand-box:nth-child(5){
+   place-content: end;
+   text-align: center;
+   padding-bottom: 2%;
    background-image: url("../images/desktop/image-graphic-design.jpg");
+   opacity: 0.9;
+}
+.brand-box:nth-child(5){
+   color: #313131;
 }
 .brand-box:nth-child(6){
+   place-content: end;
+   text-align: center;
+   padding-bottom: 2%;
    background-image: url("../images/desktop/image-photography.jpg");
+   opacity: 0.9;
+}
+.brand-box:nth-child(n+5) > h2{
+   color: #313131;
+}
+.brand-box:nth-child(n+5) > p{
+   color: #313131;
+   font-weight: 900;
 }
