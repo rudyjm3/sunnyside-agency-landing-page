@@ -176,3 +176,28 @@ section{
    color: #313131;
    font-weight: 900;
 }
+
+/* == CLIENTS REVIEWS STYLING ==*/
+#testimonial{
+   background-color: white;
+}
+.container-client-reviews{
+   margin: 50px 0;
+   padding: 0 100px;
+   text-align: center;
+}
+.review-title{
+   font-size: 35px;
+   font-weight: 900;
+   font-family: 'Fraunces', serif;
+   line-height: 1.2;
+   margin: 150px 0 75px 0;
+}
+.wrapper-client-review{
+   justify-content: space-evenly;
+}
+.client-review-box{
+   width: 30%;
+   padding: 10px;
+   background-color: yellow;
+}
