@@ -12,6 +12,7 @@ body{
    flex-wrap: wrap;
 }
 section{
+   width: 100%;
    max-width: 1440px;
 }
 .wrapper{
@@ -227,11 +228,92 @@ section{
 }
 
 /*== FOOTER GALLERY STYLING ==*/
+
 .container-footer-gallery{
    width: 100%;
 }
+.col-img-wrapper{
+   width: 100%;
+}
 .footer-col-img{
-   width: 25%;
-   height: 100%;
-   max-height: 440px;
+   width: 100%;
+   max-width: 360px;
+   height: 450px;
+   background-color: #3dbeff;
+   background-size: cover;
+   background-position: bottom;
+   background-repeat: no-repeat;
+}
+.footer-col-img:nth-child(1){
+   background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
+}
+.footer-col-img:nth-child(2){
+   background-image: url("../images/desktop/image-gallery-orange.jpg");
+}
+.footer-col-img:nth-child(3){
+   background-image: url("../images/desktop/image-gallery-cone.jpg");
+}
+.footer-col-img:nth-child(4){
+   background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
+}
+
+/*== BOTTOM FOOTER STYLING  ==*/
+.footer-content-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   text-align: center;
+   width: 100%;
+   background-color: #90d4c5;
+}
+.footer-logo{
+   width: 100%;
+   margin: 70px 0;
+}
+/*.footer-logo-img{
+   /* HEX Value used for filter generator #2e7668  
+   filter: invert(33%) sepia(8%) saturate(3629%) hue-rotate(118deg) brightness(97%) contrast(73%);
+}*/
+.footer-logo svg path {
+   color: #2e7668;
+   fill: currentColor;
+}
+.footer-menu{
+   width: 100%;
+   margin-bottom: 80px;
+   justify-content: center;
+   align-items: center;
+}
+.ul-footer-menu{
+   display: flex;
+   justify-content: center;
+   font-family: 'Barlow', sans-serif;
+}
+.li-footer-menu-item{
+   padding: 15px 30px;
+   width: max-content;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+}
+.li-footer-menu-item:active{
+   background-color: white;
+   color: #333;
+}
+.footer-menu-link{
+   text-decoration: none;
+   color: #418878;
+}
+.footer-menu-link:hover{
+   color: white;
+}
+.social-links-container{
+   padding-bottom: 60px;
+}
+.social-links-menu > a{
+   margin: 0 10px;
+}
+.social-links-menu > a > svg path:hover{
+   color: white;
+   fill: currentColor;
 }
