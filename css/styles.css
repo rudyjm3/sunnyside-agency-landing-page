@@ -93,6 +93,19 @@ section{
    width: 100%;
    margin-bottom: 50px;
 }
+.page-down{
+   -webkit-animation: hero-arrow 1s infinite alternate;
+   animation: hero-arrow 1s infinite alternate;
+   cursor: pointer;
+}
+@-webkit-keyframes hero-arrow {
+   0% { transform: translateY(0); }
+   100% { transform: translateY(-20px); }
+}
+@keyframes hero-arrow {
+   0% { transform: translateY(0); }
+   100% { transform: translateY(-20px); }
+}
 
 /* == BRAND GRID INFO STYLING == */
 #brand-info-section{
@@ -259,6 +272,7 @@ section{
 
 /*== BOTTOM FOOTER STYLING  ==*/
 .footer-content-container{
+   position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -266,6 +280,24 @@ section{
    text-align: center;
    width: 100%;
    background-color: #90d4c5;
+}
+.top-of-page{
+   position: absolute;
+   top: 43px;
+}
+.top-of-page-arrow{
+   color: white;
+   -webkit-animation: top-of-page 1s infinite alternate;
+   animation: top-of-page 1s infinite alternate;
+   cursor: pointer;
+}
+@-webkit-keyframes top-of-page {
+   0% { transform: translateY(0); }
+   100% { transform: translateY(-20px); }
+}
+@keyframes top-of-page {
+   0% { transform: translateY(0); }
+   100% { transform: translateY(-20px); }
 }
 .footer-logo{
    width: 100%;
@@ -303,6 +335,7 @@ section{
 .footer-menu-link{
    text-decoration: none;
    color: #418878;
+   transition: all 0.3s ease-in-out;
 }
 .footer-menu-link:hover{
    color: white;
@@ -310,8 +343,11 @@ section{
 .social-links-container{
    padding-bottom: 60px;
 }
-.social-links-menu > a{
+.social-links-menu > a {
    margin: 0 10px;
+}
+.social-links-menu > a > svg path{
+    transition: all 0.3s ease-in-out;
 }
 .social-links-menu > a > svg path:hover{
    color: white;
