@@ -8,15 +8,15 @@
 
    /* HEADER / HERO */
    #header{
-      height: 70vh;
+      height: 100vh;
    }     
    .main-title{      
       font-size: 25px;
       word-spacing: 10px;
-      margin-bottom: 25px;
+      margin-bottom: 35px;
     } 
     .page-down{
-       margin-top: 20px;
+       margin-top: 30px;
     }
     .page-down > img{
        height: 60px;
