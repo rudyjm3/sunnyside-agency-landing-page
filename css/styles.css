@@ -283,7 +283,7 @@ section{
 
 /* == CLIENTS REVIEWS STYLING ==*/
 #testimonial{
-   background-color: white;
+   background-color:#FFFBF8;
 }
 .container-client-reviews{
    margin: 50px 0;
@@ -296,6 +296,7 @@ section{
    font-family: 'Fraunces', serif;
    color: #868686;
    line-height: 1.8;
+   letter-spacing: 5px;
    margin: 150px 0 75px 0;
    text-transform: uppercase;
 }
@@ -392,7 +393,7 @@ section{
 }
 .footer-logo{
    width: 100%;
-   margin: 70px 0;
+   margin: 70px 0 30px 0;
 }
 /*.footer-logo-img{
    /* HEX Value used for filter generator #2e7668  
