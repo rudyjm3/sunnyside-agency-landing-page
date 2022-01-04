@@ -5,6 +5,15 @@
        min-width: 360px;
        width: 100%;
    } 
+   /* == DESKTOP MENU ==*/
+   .menu-container{
+      display: none;
+   }
+   /* == MOBILE MENU ==*/
+   .mobile-menu-container{
+      display: block;
+      width: 100%;
+   }
 
    /* HEADER / HERO */
    #header{

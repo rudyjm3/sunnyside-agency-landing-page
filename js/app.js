@@ -13,3 +13,11 @@ up.addEventListener('click', function() {
       behavior: "smooth"
    });
 });
+
+// MOBILE MENU OPEN FUNCTION
+
+function toggleMenu(){
+   let dropdown = document.getElementsByClassName('mobile-ul-menu')[0];
+   dropdown.classList.toggle('mobile-menu-toggle-open');
+   dropdown.classList.add('fade-in');
+}
